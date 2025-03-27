@@ -13,7 +13,16 @@ return {
   },
   {
       "AstroNvim/astrocommunity",
+      { import = "astrocommunity.pack.python" },
       { import = "astrocommunity.git.gitlinker-nvim" },
       { import = "astrocommunity.completion.copilot-lua" },
-  }
+      { import = "astrocommunity.colorscheme.bluloco-nvim" },
+  },
+  {
+    "AstroNvim/astroui",
+    ---@type AstroUIOpts
+    opts = {
+      colorscheme = "bluloco",
+    }
+  },
 }
